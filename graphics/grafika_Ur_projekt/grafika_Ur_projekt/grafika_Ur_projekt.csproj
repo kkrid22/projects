@@ -1,0 +1,69 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\earth.jpg" />
+    <None Remove="Resources\Intergalactic_Spaceships_Version_2.mtl" />
+    <None Remove="Resources\jupiter.jpg" />
+    <None Remove="Resources\mars.jpg" />
+    <None Remove="Resources\mercury.jpg" />
+    <None Remove="Resources\neptune.jpg" />
+    <None Remove="Resources\planets\earth.jpg" />
+    <None Remove="Resources\planets\jupiter.jpg" />
+    <None Remove="Resources\planets\mars.jpg" />
+    <None Remove="Resources\planets\mercury.jpg" />
+    <None Remove="Resources\planets\neptune.jpg" />
+    <None Remove="Resources\planets\saturn.jpg" />
+    <None Remove="Resources\planets\sun.jpg" />
+    <None Remove="Resources\planets\uranus.jpg" />
+    <None Remove="Resources\planets\venus.jpg" />
+    <None Remove="Resources\saturn.jpg" />
+    <None Remove="Resources\skybox.png" />
+    <None Remove="Resources\spaceship.obj" />
+    <None Remove="Resources\spaceship\spaceship.obj" />
+    <None Remove="Resources\spaceship\spaceship_color.jpg" />
+    <None Remove="Resources\spaceship\spaceship_emi.jpg" />
+    <None Remove="Resources\spaceship\spaceship_metalness.jpg" />
+    <None Remove="Resources\sun.jpg" />
+    <None Remove="Resources\uranus.jpg" />
+    <None Remove="Resources\venus.jpg" />
+    <None Remove="Shaders\FragmentShader.frag" />
+    <None Remove="Shaders\VertexShader.vert" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\planets\earth.jpg" />
+    <EmbeddedResource Include="Resources\planets\jupiter.jpg" />
+    <EmbeddedResource Include="Resources\planets\mars.jpg" />
+    <EmbeddedResource Include="Resources\planets\mercury.jpg" />
+    <EmbeddedResource Include="Resources\planets\neptune.jpg" />
+    <EmbeddedResource Include="Resources\planets\saturn.jpg" />
+    <EmbeddedResource Include="Resources\planets\sun.jpg" />
+    <EmbeddedResource Include="Resources\planets\uranus.jpg" />
+    <EmbeddedResource Include="Resources\planets\venus.jpg" />
+    <EmbeddedResource Include="Resources\skybox.png" />
+    <EmbeddedResource Include="Resources\spaceship\spaceship.obj" />
+    <EmbeddedResource Include="Resources\spaceship\spaceship_color.jpg" />
+    <EmbeddedResource Include="Resources\spaceship\spaceship_emi.jpg" />
+    <EmbeddedResource Include="Resources\spaceship\spaceship_metalness.jpg" />
+    <EmbeddedResource Include="Shaders\FragmentShader.frag" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Shaders\VertexShader.vert" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Silk.NET" Version="2.21.0" />
+    <PackageReference Include="Silk.NET.OpenGL.Extensions.ImGui" Version="2.21.0" />
+    <PackageReference Include="StbImageSharp" Version="2.27.14" />
+  </ItemGroup>
+
+</Project>
