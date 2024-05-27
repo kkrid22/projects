@@ -1,0 +1,99 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\masod ev\\masodik_felev\\abk2\\lab5\\Connect And Modify Database\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9DD49034-E864-4BDA-BB10-8D0864E5E223}|kkim2254_lab4\\DatabaseConnectionAndModification.csproj|c:\\masod ev\\masodik_felev\\abk2\\lab5\\connect and modify database\\kkim2254_lab4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DD49034-E864-4BDA-BB10-8D0864E5E223}|kkim2254_lab4\\DatabaseConnectionAndModification.csproj|solutionrelative:kkim2254_lab4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DD49034-E864-4BDA-BB10-8D0864E5E223}|kkim2254_lab4\\DatabaseConnectionAndModification.csproj|C:\\masod ev\\masodik_felev\\abk2\\lab5\\Connect And Modify Database\\kkim2254_lab4\\properties\\settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DD49034-E864-4BDA-BB10-8D0864E5E223}|kkim2254_lab4\\DatabaseConnectionAndModification.csproj|solutionrelative:kkim2254_lab4\\properties\\settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DD49034-E864-4BDA-BB10-8D0864E5E223}|kkim2254_lab4\\DatabaseConnectionAndModification.csproj|C:\\masod ev\\masodik_felev\\abk2\\lab5\\Connect And Modify Database\\kkim2254_lab4\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DD49034-E864-4BDA-BB10-8D0864E5E223}|kkim2254_lab4\\DatabaseConnectionAndModification.csproj|solutionrelative:kkim2254_lab4\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DD49034-E864-4BDA-BB10-8D0864E5E223}|kkim2254_lab4\\DatabaseConnectionAndModification.csproj|C:\\masod ev\\masodik_felev\\abk2\\lab5\\Connect And Modify Database\\kkim2254_lab4\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DD49034-E864-4BDA-BB10-8D0864E5E223}|kkim2254_lab4\\DatabaseConnectionAndModification.csproj|solutionrelative:kkim2254_lab4\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Settings.Designer.cs",
+              "DocumentMoniker": "C:\\masod ev\\masodik_felev\\abk2\\lab5\\Connect And Modify Database\\kkim2254_lab4\\Properties\\Settings.Designer.cs",
+              "RelativeDocumentMoniker": "kkim2254_lab4\\Properties\\Settings.Designer.cs",
+              "ToolTip": "C:\\masod ev\\masodik_felev\\abk2\\lab5\\Connect And Modify Database\\kkim2254_lab4\\Properties\\Settings.Designer.cs",
+              "RelativeToolTip": "kkim2254_lab4\\Properties\\Settings.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T15:47:15.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Resources.Designer.cs",
+              "DocumentMoniker": "C:\\masod ev\\masodik_felev\\abk2\\lab5\\Connect And Modify Database\\kkim2254_lab4\\Properties\\Resources.Designer.cs",
+              "RelativeDocumentMoniker": "kkim2254_lab4\\Properties\\Resources.Designer.cs",
+              "ToolTip": "C:\\masod ev\\masodik_felev\\abk2\\lab5\\Connect And Modify Database\\kkim2254_lab4\\Properties\\Resources.Designer.cs",
+              "RelativeToolTip": "kkim2254_lab4\\Properties\\Resources.Designer.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAYwC4AAAB/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T15:46:49.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\masod ev\\masodik_felev\\abk2\\lab5\\Connect And Modify Database\\kkim2254_lab4\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "kkim2254_lab4\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\masod ev\\masodik_felev\\abk2\\lab5\\Connect And Modify Database\\kkim2254_lab4\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "kkim2254_lab4\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T15:46:41.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\masod ev\\masodik_felev\\abk2\\lab5\\Connect And Modify Database\\kkim2254_lab4\\Program.cs",
+              "RelativeDocumentMoniker": "kkim2254_lab4\\Program.cs",
+              "ToolTip": "C:\\masod ev\\masodik_felev\\abk2\\lab5\\Connect And Modify Database\\kkim2254_lab4\\Program.cs",
+              "RelativeToolTip": "kkim2254_lab4\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T15:43:21.503Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
