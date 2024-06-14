@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head.ejs', {title: 'Details' }) %>
+
+  <body>
+    <%- include('partials/navbar.ejs') %>
+      <%- include('partials/isLogged.ejs')%>
+        <script src="/front_end/frontend.userList.js"></script>
+        <div>
+          <table class="details">
+            <thead>
+              <tr>
+                <th>
+                  Nev
+                </th>
+                <th>
+                  Block
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <%users.forEach((user)=> { %>
+                <tr>
+                  <td>
+                    <%=user.Nev%>
+                  </td>
+                  <td>
+                    <button data-userID="<%=user.FelhasznaloID%>" class="felhaszBlock">Block</button>
+                  </td>
+                </tr>
+                <% }); %>
+            </tbody>
+          </table>
+
+        </div>
+  </body>
+
+</html>

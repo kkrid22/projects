@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width='device-width', initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Form my self</title>
+</head>
+
+<body>
+  <nav>
+    <div class="menu">
+      <a href="./login.html">Log in</a>
+    </div>
+  </nav>
+
+  <div class="flex-container">
+    <form class="flex-item" enctype="application/x-www-form-urlencoded" action="/register" method="POST">
+      <h1>Please Register</h1>
+
+      <label for="username">User name:</label><br>
+      <input name="username" type="text" id="username" required>
+      <br><br>
+
+      <label for="password">Password:</label><br>
+      <input type="password" name="password" id="password" required>
+      <br><br>
+
+      <label for="passwordAgain">Password again:</label><br>
+      <input type="password" name="passwordAgain" id="passwordAgain" required>
+      <br><br>
+
+      <button type="submit" id="postButton">Register</button>
+    </form>
+  </div>
+
+</body>
+
+</html>

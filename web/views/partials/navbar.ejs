@@ -1,0 +1,14 @@
+<nav>
+  <div class="menu">
+    <% if (typeof userData !=='undefined' && userData && userData.role==='admin' ) { %>
+      <a href="/admin-court">admin court</a>
+      <a href="/approve">Approve users</a>
+      <a href="/user-list">User list</a>
+      <% } %>
+        <% if (typeof userData !=='undefined' && userData && ( userData.role==='user' || userData.role==='admin' ) ) {
+          %>
+          <a href="/change-information">change user information</a>
+          <% } %>
+            <a href="/">filter</a>
+  </div>
+</nav>

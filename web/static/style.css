@@ -1,0 +1,108 @@
+/*body*/
+body{
+    margin: 0;
+    padding: 0;
+    background: url('./background2.jpg') no-repeat center center fixed;
+    background-size:cover;
+
+}
+/*forms*/
+form {
+    background-color: black;
+    color: silver;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    width: 100vw;
+}
+  
+.flex-item {
+    margin: 50px;
+    padding: 10px;
+    border: 1px solid gold;
+    box-shadow: 0 4px 8px 0 rgba(218, 165, 32, 0.6), 0 6px 20px 0 rgba(218, 165, 32, 0.4);
+
+}
+
+
+/*tables*/
+
+.details a {
+    text-decoration: none;
+    color: #2272FF;
+}
+.details
+{
+
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: silver;
+    padding: 5px;
+    border: 3px solid;
+
+}
+.details th, .details td{
+    border: 1px solid silver;
+    padding: 8px;
+}
+.details tr:hover{
+    background-color: silver;
+    color: black;
+}
+
+.isLoggedIn{
+    margin-bottom: 20px;
+    background-color: #fdf5e6;
+    background: linear-gradient(to right, #fde400, rgb(86, 74, 9));
+    color: #333;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: auto;
+}
+
+.isLoggedIn a {
+    text-decoration: none;
+    color: #2272FF;
+    padding: 8px;
+    font-size: 26px;
+}
+.isLoggedIn a:hover {
+    color: silver;
+}
+
+/*menu*/
+.menu {
+    padding-right: 10px;
+    margin-left: 5px;
+}
+
+.menu a {
+    text-decoration: none;
+    color:#2272FF;
+    padding: 10px;
+    font-size: 25px;
+    background-color: black;
+    border: 1px solid silver;
+}
+
+.menu a:hover {
+    color:silver;
+}
+
+.rent-form {
+    width: 20%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.message, .error-message {
+    color: silver;
+}
+

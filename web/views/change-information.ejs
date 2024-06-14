@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head.ejs', {title: 'Info Change' }) %>
+
+  <body>
+    <%- include('partials/navbar.ejs') %>
+      <%- include('partials/isLogged.ejs')%>
+        <div class="change-info flex-container">
+          <form action="/change" method="POST" class="flex-item">
+
+            <label for="newUsername">Write here your new username</label> <br>
+            <input type="text" name="newUsername" id="newUsername">
+            <br><br>
+            <label for="newPassword">Write here your new Password</label><br>
+            <input type="password" name="newPassword" id="newPassword">
+            <br><br>
+            <button type="submit" id="changeButton">Change</button>
+          </form>
+        </div>
+  </body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head.ejs', {title: 'Approve' }) %>
+
+  <body>
+    <%- include('partials/navbar.ejs') %>
+      <%- include('partials/isLogged.ejs')%>
+        <script src="/front_end/frontend.auth.js"></script>
+
+        <% if (users && users !=='undefined' ) { %>
+          <div class="not-yet-approved">
+            <table class="details">
+              <thead>
+                <th>Name</th>
+                <th>Reject</th>
+                <th>Accept</th>
+              </thead>
+              <tbody>
+                <%users.forEach((user)=> { %>
+                  <tr>
+                    <td>
+                      <%=user.Nev%>
+                    </td>
+                    <td>
+                      <button data-username="<%=user.Nev%>" class="felhasznaloTorles">Reject</button>
+                    </td>
+                    <td>
+                      <button data-username="<%=user.Nev%>" class="felhasznaloElfogad">Accept</button>
+                    </td>
+                  </tr>
+                  <% }); %>
+              </tbody>
+            </table>
+          </div>
+          <% } else { %>
+            <p>There are no users who need approval</p>
+            <% } %>
+  </body>
+
+</html>

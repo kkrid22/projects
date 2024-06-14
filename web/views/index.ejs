@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head.ejs', { title: 'Request logger' }, {title: 'Szures' }) %>
+
+  <body>
+    <%- include('partials/navbar.ejs') %>
+      <%- include('partials/isLogged.ejs') %>
+        <% if (errorMessage) { %>
+          <div class="error-message">
+            <%= errorMessage %>
+          </div>
+          <% } %>
+
+            <div class="flex-container">
+              <form class="flex-item" enctype="application/x-www-form-urlencoded" method="GET" action="/">
+                <h2 class="flex-item">User filtering</h2>
+                <br>
+                <label for="courtType">Choose a course:</label>
+                <select name="courtType" id="courtType">
+                  <option value="whatever">Whatever</option>
+                  <option value="tennis">Tennis</option>
+                  <option value="football">Football</option>
+                  <option value="soccer">Soccer</option>
+                  <option value="baseball">Baseball</option>
+                  <option value="volleyball">Volleyball</option>
+                </select>
+                <br><br>
+
+                <label for="minPrice">Min Renting Price: </label><br>
+                <input type="number" id="minPrice" name="minPrice" min="0"><br><br>
+
+                <label for="maxPrice">Max Renting Price: </label><br>
+                <input type="number" id="maxPrice" name="maxPrice" min="0"><br><br>
+
+                <button type="submit" id="filterButton">Filter</button>
+              </form>
+            </div>
+            <br><br>
+            <div>
+
+              <% if (requests.length) { %>
+                <table class="details">
+                  <tr>
+                    <th>court Name</th>
+                    <th>court Price</th>
+                    <th>court Address</th>
+                    <th>links to courts</th>
+                  </tr>
+                  <%requests.forEach((requests)=> { %>
+                    <tr onclick="addDetails('<%= requests.PalyaID %>', this)">
+                      <td>
+                        <%= requests.Nev%>
+                      </td>
+                      <td>
+                        <%= requests.Ar %>
+                      </td>
+                      <td>
+                        <%= requests.Cime %>
+                      </td>
+                      <td><a href="details/<%=requests.PalyaID %>"> Link </a> </td>
+                    </tr>
+                    <% }) %>
+                </table>
+                <% } else { %>
+                  <p> No results to show</p>
+                  <% } %>
+
+            </div>
+            <script src="front_end/frontend.index.js"></script>
+
+  </body>
+
+</html>

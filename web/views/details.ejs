@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head.ejs', {title: 'Details' }) %>
+
+  <body>
+    <%- include('partials/navbar.ejs') %>
+      <%- include('partials/isLogged.ejs')%>
+        <script src="/front_end/frontend.details.js"></script>
+        <% if (errorMessage) { %>
+          <div class="error-message">
+            <%= errorMessage %>
+          </div>
+          <% } %>
+
+            <div class="message">
+              <% if (message && status) { %>
+                <div class="message <%= status === 'success' ? 'success' : 'error' %>">
+                  <%= message %>
+                </div>
+                <% } %>
+            </div>
+
+            <% if (typeof userData !=='undefined' && userData && userData.role==='admin' ) { %>
+              <div class="flex-container">
+                <form class="flex-item" enctype="application/x-www-form-urlencoded" method="GET"
+                  action="/details/<%= court.PalyaID %>">
+                  <h2 class="flex-item">Reservation filtering</h2>
+                  <br>
+
+                  <label for="minDate">Min Renting Date: </label><br>
+                  <input type="date" id="minDate" name="minDate"><br><br>
+
+                  <label for="maxDate">Max Renting Date: </label><br>
+                  <input type="date" id="maxDate" name="maxDate"><br><br>
+
+                  <button type="submit" id="filterButton">Filter</button>
+                </form>
+              </div>
+              <% } %>
+
+                <div class="rented">
+                  <% if (reservation && reservation.length> 0) { %>
+                    <table class="details">
+                      <thead>
+                        <tr>
+                          <% if (typeof userData !=='undefined' && userData ) { %>
+                            <% if (userData.role==='admin' ) { %>
+                              <th>Name</th>
+                              <% } %>
+                                <th>Date</th>
+                                <% if ( userData.role==='user' || userData.role==='admin' ) { %>
+                                  <th>Delete</th>
+                                  <% } %>
+
+                                    <% if (userData.role==='admin' ) { %>
+                                      <th>Accept</th>
+                                      <% } %>
+                                        <% } %>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <% reservation.forEach(item=> { %>
+                          <% if (typeof userData !=='undefined' && userData) { %>
+                            <tr>
+                              <% if (userData.role==='admin' ) { %>
+                                <td>
+                                  <%= item.Nev %>
+                                </td>
+                                <% } %>
+                                  <%if(item.Elfogadva || userData.role==='admin' ) { %>
+                                    <td>
+                                      <%= item.Datum %>
+                                    </td>
+                                    <% if ( (userData.username===item.Nev && userData.role==='user' ) ||
+                                      userData.role==='admin' ) { %>
+                                      <td>
+                                        <button data-courtID="<%=court.PalyaID%>" data-date="<%=item.Datum%>"
+                                          class="foglalasTorles">Delete</button>
+                                      </td>
+                                      <% } %>
+                                        <% } %>
+                                          <%if(!item.Elfogadva && userData.role==='admin' ) {%>
+                                            <td>
+                                              <button data-courtID="<%=court.PalyaID%>" data-date="<%=item.Datum%>"
+                                                class="foglalasElfogad">Accept</button>
+                                            </td>
+                                            <% } %>
+                            </tr>
+                            <% } %>
+                              <% }); %>
+                      </tbody>
+                    </table>
+                    <% } else { %>
+                      <p>This court has not been rented</p>
+                      <% } %>
+                </div>
+                <br><br>
+                <table class="details">
+                  <tr>
+                    <th>Name</th>
+                    <td>
+                      <%= court.Nev %>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Address</th>
+                    <td>
+                      <%= court.Cime %>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Description</th>
+                    <td>
+                      <%= court.Leiras %>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Price</th>
+                    <td>
+                      <%= court.Ar %>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Images</th>
+                    <td>
+                      <% if (paths && paths.length> 0) { %>
+                        <% paths.forEach((path)=> { %>
+                          <div class="image-container">
+                            <img id="image" src="/pic/<%= path %>" alt="court image">
+                            <% if (typeof userData !=='undefined' && userData && userData.role==='admin' ) { %>
+                              <button id="<%= path %>" class="torles">Delete</button>
+                              <% } %>
+                          </div>
+                          <% }); %>
+                            <% } else { %>
+                              <p>No pictures available</p>
+                              <% } %>
+                    </td>
+                  </tr>
+                </table>
+                <% if (typeof userData !=='undefined' && userData && userData.role==='admin' ) { %>
+                  <div class="flex-container">
+                    <form class="flex-item" enctype="multipart/form-data" method="POST" action="/uploadFile">
+                      <h2 class="flex-item">Picture upload for court</h2>
+                      <input type="hidden" name="courtid" value="<%=court.PalyaID%>">
+                      <br><br>
+                      <input type="file" name="Image" id="imageUpload" accept="image/*" required>
+                      <button type="submit" id="uploadButton">Upload</button>
+                    </form>
+                    <% } %>
+
+                      <% if (typeof userData !=='undefined' && userData && userData.role==='user' ) { %>
+                        <form class="flex-item rent-form" enctype="application/x-www-form-urlencoded" method="POST"
+                          action="/rent">
+                          <h2 class="flex-item">Rent court</h2>
+                          <br>
+                          <input type="hidden" name="courtid" value="<%=court.PalyaID%>">
+
+                          <label for="rentDate">Choose a date</label> <br>
+                          <input type="date" id="rentDate" name="rentDate" required>
+                          <br><br>
+                          <button type="submit">Submit</button>
+                        </form>
+                        <% } %>
+                  </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,9 @@
+<div class="isLoggedIn">
+  <% if (typeof userData !=='undefined' && userData) { %>
+    <h2>Welcome, <%= userData.username%>!</h2>
+    <a href="/logout"> Log out</a>
+    <% } else {%>
+      <h2>Welcome</h2>
+      <a href="../login.html">Log in</a>
+      <% } %>
+</div>

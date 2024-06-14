@@ -1,0 +1,97 @@
+/*elso alpont*/
+
+body {
+    background-image: url('pic/background.jpg');
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+}
+
+/*masodik alpont*/
+h1,
+h3 {
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+/*harmadik alpont*/
+h2.masik {
+    color: green;
+    font-size: 26px;
+    font-family: cursive;
+}
+
+h2.masik2 {
+    color: red;
+    font-size: 26px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*negyedik alpont*/
+.altalanos {
+    color: blueviolet;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: dotted;
+}
+
+/*otodik alpont*/
+nav li {
+    background-color: antiquewhite;
+    color: brown;
+    display: inline;
+    margin-right: 20px;
+}
+
+/*hatodik alpont*/
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: orange;
+    font-style: italic;
+    font-family: cursive;
+}
+
+a:active {
+    color: brown;
+}
+
+a:visited {
+    color: blue;
+}
+
+/*hetedik alpont*/
+.paragrafus {
+    border-style: solid;
+    padding-left: 20px;
+    color: darkcyan;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*nyolcadik alpont*/
+
+tr:nth-child(even) {
+    background-color: burlywood;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgreen;
+}
+
+/*kilencedik alpont*/
+.kartya {
+    display: flex;
+    flex-wrap: wrap;
+    display: inline-block;
+    width: 400px;
+
+}
+
+.kartya img {
+    width: 300px;
+    height: 300px;
+}

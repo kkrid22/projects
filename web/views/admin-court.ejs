@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head.ejs', {title: 'Insert Court' }) %>
+
+  <body>
+    <%- include('partials/navbar.ejs') %>
+      <%- include('partials/isLogged.ejs')%>
+        <div class="flex-container">
+          <form class="flex-item" enctype="application/x-www-form-urlencoded" method="POST" action="/insertField">
+            <h2 class="flex-item">Admin court upload</h2>
+            <br>
+            <label for="courtUpload">Choose a Court to introduce:</label>
+            <select name="courtUpload" id="courtUpload">
+              <option value="tennis">Tennis</option>
+              <option value="football">Football</option>
+              <option value="soccer">Soccer</option>
+              <option value="baseball">Baseball</option>
+              <option value="volleyball">Volleyball</option>
+            </select>
+            <br><br>
+
+            <label for="rentingPrice">Renting Price:</label><br>
+            <input type="number" id="rentingPrice" name="rentingPrice" required min="0"><br><br>
+
+            <label for="address">Address: </label><br>
+            <input type="text" name="address" id="address" required><br><br>
+
+            <label for="openingTime">Opening Time:</label>
+            <input type="time" name="openingTime" id="openingTime">
+            <br><br>
+
+            <label for="closingTime">Closing Time:</label>
+            <input type="time" name="closingTime" id="closingTime">
+            <br><br>
+            <label for="description">Description:</label><br>
+            <textarea name="description" id="description" cols="50" rows="4" required></textarea>
+            <br><br>
+            <button type="submit" id="submitButton">Submit</button>
+
+          </form>
+        </div>
+
+  </body>
+
+</html>
